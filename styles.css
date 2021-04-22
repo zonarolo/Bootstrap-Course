@@ -20,7 +20,7 @@ html {
 
 .nav-link:hover {
   background: #0d6efd;
-  color: #fff
+  color: #fff;
 }
 
 .inicio-link {
@@ -35,4 +35,25 @@ html {
 .toma {
   background: tomato;
   color: white;
+}
+
+.quienes-somos {
+  background: #0d6efd;
+  color: #fff;
+  height: 100vh;
+}
+
+.img-fluid {
+  max-width: 50%;
+}
+
+.servicios .fa {
+  color: #0d6efd;
+  font-size: 6rem;
+  margin-top: 3rem;
+}
+
+.servicios h3 {
+  font-weight: bold;
+  margin-top: 2rem;
 }
