@@ -32,11 +32,6 @@ html {
   color: white;
 }
 
-.toma {
-  background: tomato;
-  color: white;
-}
-
 .quienes-somos {
   background: #0d6efd;
   color: #fff;
@@ -56,4 +51,23 @@ html {
 .servicios h3 {
   font-weight: bold;
   margin-top: 2rem;
+}
+
+.portafolio {
+  background-color: gray;
+  color: #fff;
+}
+
+.portafolio a {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.portafolio img {
+  transition: all 0.3s ease;
+}
+
+.portafolio a:hover img {
+  transform: scale(1.2);
 }
