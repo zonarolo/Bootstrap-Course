@@ -18,9 +18,13 @@ html {
   font-size: 1.5rem;
 }
 
+.navbar-nav {
+  transition: all 0.3s ease;
+}
 .nav-link:hover {
   background: #0d6efd;
   color: #fff;
+  border-radius: 5px;
 }
 
 .inicio-link {
@@ -28,12 +32,12 @@ html {
 }
 
 .texto-bienvenidos {
-  margin-top: 12rem;
+  margin-top: 16rem;
   color: white;
 }
 
 .quienes-somos {
-  background: #0d6efd;
+  background: #fbe0c4;
   color: #fff;
   height: 100vh;
 }
@@ -45,7 +49,7 @@ html {
 .servicios .fa {
   color: #0d6efd;
   font-size: 6rem;
-  margin-top: 3rem;
+  margin: 3rem;
 }
 
 .servicios h3 {
@@ -66,8 +70,25 @@ html {
 
 .portafolio img {
   transition: all 0.3s ease;
+  min-width: 100%;
 }
 
 .portafolio a:hover img {
   transform: scale(1.2);
+}
+
+.footer {
+  background-color: #222222;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  .bienvenidos {
+    background: url(https://cdn.pixabay.com/photo/2020/09/29/10/42/library-5612441_960_720.jpg);
+    background-size: cover;
+  }
 }

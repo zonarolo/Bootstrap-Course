@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg">
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Bootstrap CSS -->
@@ -20,14 +20,14 @@
       href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
     />
 
-    <title>Hello, world!</title>
+    <title>Course</title>
   </head>
   <body>
     <section class="bienvenidos">
       <header class="encabezado">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">AULAIDEAL.COM</a>
+            <a class="navbar-brand" href="#">Bootstrap Course</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -44,13 +44,13 @@
               id="navbarNavAltMarkup"
             >
               <div class="navbar-nav">
-                <a class="nav-link inicio-link" aria-current="page" href="#"
-                  >Inicio</a
+                <a class="nav-link inicio-link px-3 m-2 aria-current="page" href="#"
+                  >INICIO</a
                 >
-                <a class="nav-link" href="#">Nosotros</a>
-                <a class="nav-link" href="#">Servicios</a>
-                <a class="nav-link" href="#">Portafolio</a>
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link px-3 m-2" href="#nosotros">NOSOTROS</a>
+                <a class="nav-link px-3 m-2" href="#servicios">SERVICIOS</a>
+                <a class="nav-link px-3 m-2" href="#portafolio">PORTAFOLIO</a>
+                
               </div>
             </div>
           </div>
@@ -59,11 +59,11 @@
       <div class="texto-bienvenidos container text-center">
         <p class="h4 mb-3">Bienvenidos a nuestro estudio</p>
         <h1 class="display-1 p-4 mb-4">ENCANTADOS DE CONOCERTE</h1>
-        <a href="#" class="btn btn-primary btn-lg">PONTE EN CONTACTO</a>
+        <a href="mailto:juanluis211@protonmail.com" class="btn btn-primary btn-lg">PONTE EN CONTACTO</a>
       </div>
     </section>
 
-    <section class="quienes-somos p-4 text-center">
+    <section class="quienes-somos p-4 text-center" id="nosotros">
       <div class="container">
         <img
           src="https://cdn.pixabay.com/photo/2018/04/25/22/55/boys-3350810__340.png"
@@ -87,25 +87,25 @@
       </div>
     </section>
 
-    <section class="servicios py-2 text-center">
+    <section class="servicios py-2 text-center" id="servicios">
       <div class="container">
         <h2 class="h3 mt-5">NUESTROS SERVICIOS</h2>
         <div class="row">
           <div class="col-md-4">
             <i class="fa fas fa-briefcase"></i>
-            <h3>Aplicaciones para la nube</h3>
+            <h5>Aplicaciones para la nube</h5>
             <p>Para empresa que requiera ampliar sus plataformas de gestion.</p>
           </div>
           <div class="col-md-4">
             <i class="fa fas fa-bullhorn"></i>
-            <h3>Fábrica de software</h3>
+            <h5>Fábrica de software</h5>
             <p>
               Servicios de mejora correctiva y evolutiva para sus aplicaciones.
             </p>
           </div>
           <div class="col-md-4">
             <i class="fa far fa-check-square"></i>
-            <h3>Diseño personalizado</h3>
+            <h5>Diseño personalizado</h5>
             <p>
               Customiza hasta el ultimo pixel de tu App. Infinitas
               Posibilidades.
@@ -115,7 +115,7 @@
       </div>
     </section>
 
-    <section class="portafolio py-2 text-center">
+    <section class="portafolio py-2 text-center" id="portafolio">
       <div class="container">
         <h2 class="h3 my-5">ULTIMOS PROYECTOS</h2>
         <div class="row">
@@ -176,6 +176,33 @@
         </div>
       </div>
     </section>
+    <footer class="footer py-4 text-center">
+      <div class="container">
+        <a href="https://www.twitter.com/zonarolo"
+          ><i class="icon fab fa-twitter fa-2x"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/juanrolo/"
+          ><i class="fab fa-linkedin-in fa-2x mx-3"></i></a>
+        <a href="mailto:juanluis211@protonmail.com"
+          ><i class="icon fas fa-envelope fa-2x"></i
+        ></a>
+        <p>&copy; Copyright 2021 Juan Rolo. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="quienes-somos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Somos tu mejor opcion!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ducimus perspiciatis esse voluptatibus commodi laboriosam architecto consectetur facilis ea atque molestiae provident eius, porro distinctio eum? Dicta quo ullam earum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
